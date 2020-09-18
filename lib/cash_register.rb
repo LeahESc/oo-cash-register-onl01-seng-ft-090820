@@ -2,12 +2,12 @@ require 'pry'
 
 class CashRegister
   attr_accessor :total, :discount, :last_transaction
-  @@items = {:title => []}
+ 
   
   def initialize(discount = 0)
       @total = 0   
       @discount = discount
-      # @items = {:title => []}
+      @items = {:title => []}
   end
   
   def total
@@ -34,7 +34,7 @@ class CashRegister
   end 
   
   def items
-    @@items[title]
+    @items[title]
   end
   
 end 
