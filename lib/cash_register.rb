@@ -19,7 +19,7 @@ class CashRegister
     # if quantity > 1 
       # quantity.times do 
       # @items[title] << title
-    end
+    # end
   end
   
   def apply_discount
