@@ -7,7 +7,7 @@ class CashRegister
   def initialize(discount = 0)
       @total = 0   
       @discount = discount
-      @items = []
+      # @items = []
   end
   
   def total
@@ -36,5 +36,7 @@ class CashRegister
     @items
   end
 
-  def 
+  def void_last_transaction
+    
+  end
 end 
