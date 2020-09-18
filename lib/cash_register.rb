@@ -7,7 +7,7 @@ class CashRegister
   def initialize(discount = 0)
       @total = 0   
       @discount = discount
-      @items = {:title => []}
+      @items = {:item_name => []}
   end
   
   def total
@@ -18,7 +18,7 @@ class CashRegister
     self.total  = @total + (price * quantity)
     # if quantity > 1 
       # quantity.times do 
-      # @items[title] << title
+      # @items[item_name] << title
     # end
   end
   
@@ -34,7 +34,7 @@ class CashRegister
   end 
   
   def items
-    @items[title]
+    @items[item_name]
   end
   
 end 
